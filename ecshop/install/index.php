@@ -92,7 +92,8 @@ case 'check' :
     if ($dir_checking['result'] === 'ERROR'
             || !empty($template_checking)
             || !empty($rename_priv)
-            || !function_exists('mysql_connect'))
+            || !class_exists('mysqli'))
+            //|| !function_exists('mysql_connect'))
     {
         $disabled = 'disabled="true"';
     }
