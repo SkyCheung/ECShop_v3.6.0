@@ -15,7 +15,7 @@
 
 
 
-if (!defined('DITAN_ECS'))
+if (!defined('IN_ECS'))
 {
     die('Hacking attempt');
 }
