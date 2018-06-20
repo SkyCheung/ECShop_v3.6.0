@@ -29,13 +29,12 @@ class ECS
 
     /**
      * 构造函数
-     *
-     * @access  public
-     * @param   string      $ver        版本号
-     *
+     * @param $db_name
+     * @param $prefix
      * @return  void
      */
-    function ECS($db_name, $prefix)
+    //function ECS($db_name, $prefix)
+    function __construct($db_name, $prefix)
     {
         $this->db_name = $db_name;
         $this->prefix  = $prefix;
