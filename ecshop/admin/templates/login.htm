@@ -227,11 +227,11 @@ function get_certificate(){
   var is_active = "{$certi.passport_uid}";
   /* 未激活站点登录后台必须先激活 */
   if (!is_active) {
-    loginPanel.classList.add('cloud');
-    elsePanel.classList.add('ecshop');
-    loginPanel.innerHTML= dom;
-    elsePanel.getElementsByTagName('p')[0].innerHTML = '{$lang.ecshop_account}';
-    get_certificate();
+    //loginPanel.classList.add('cloud');
+    //elsePanel.classList.add('ecshop');
+    //loginPanel.innerHTML= dom;
+    //elsePanel.getElementsByTagName('p')[0].innerHTML = '{$lang.ecshop_account}';
+    //get_certificate();
   }
 
   cloudLogin.onclick = function(){
