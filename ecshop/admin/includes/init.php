@@ -383,14 +383,14 @@ else
 }
 
 /* 云起认证 */
-//include_once(ROOT_PATH."includes/cls_certificate.php");
-//$cert = new certificate();
-//$certificate = $cert->get_shop_certificate();
-//if(!$certificate['certificate_id']){
-    //$callback = $ecs->url()."admin/certificate.php?act=get_certificate&type=index";
-    //$iframe_url = $cert->get_authorize_url($callback);
-    //$smarty->assign('iframe_url',$iframe_url);
-//}
-//$smarty->assign('certi',$certificate);
+include_once(ROOT_PATH."includes/cls_certificate.php");
+$cert = new certificate();
+$certificate = $cert->get_shop_certificate();
+if(!$certificate['certificate_id']){
+    $callback = $ecs->url()."admin/certificate.php?act=get_certificate&type=index";
+    $iframe_url = $cert->get_authorize_url($callback);
+    $smarty->assign('iframe_url',$iframe_url);
+}
+$smarty->assign('certi',$certificate);
 /* 云起认证 */
 ?>
